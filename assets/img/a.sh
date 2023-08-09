@@ -1,0 +1,11 @@
+wget https://100px.net/assets/img/default-0.02afd00a.png
+wget https://100px.net/assets/img/default-1.8c768f9e.png
+wget https://100px.net/assets/img/default-3.a9668dd7.png
+wget https://100px.net/assets/img/default-4.e06de6be.png
+wget https://100px.net/assets/img/default-5.a15d4fdc.png
+wget https://100px.net/assets/img/default-6.79ead56d.png
+wget https://100px.net/assets/img/default-7.c844f832.png
+wget https://100px.net/assets/img/prize0.2d731def.png
+wget https://100px.net/assets/img/prize1.beedc5dc.png
+wget https://100px.net/assets/img/prize2.8cf8d82f.png
+wget https://100px.net/assets/img/prize3.bea14c80.png

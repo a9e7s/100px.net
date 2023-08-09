@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何配置响应式 | 基于 Js / TS / Vue / React / 微信小程序 / uni-app / Taro 的【大转盘 &amp; 九宫格 &amp; 老虎机】抽奖插件</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="../logo.png">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fde5bc73137b15d09b1686fe514b662a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+    <meta name="description" content="🎉基于 Js / TS / Vue / React / 微信小程序 / uni-app / Taro 的【大转盘 & 九宫格 & 老虎机】抽奖插件，🎨奖品 / 文字 / 图片 / 颜色 / 按钮均可配置，支持同步 / 异步抽奖，🏅概率前 / 后端可控，可根据 dpr 自动调整清晰度适配移动端">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="../assets/css/0.styles.417e60f4.css" as="style"><link rel="preload" href="../assets/js/app.72908285.js" as="script"><link rel="preload" href="../assets/js/21.4c81c67a.js" as="script"><link rel="preload" href="../assets/js/2.02db6476.js" as="script"><link rel="preload" href="../assets/js/60.d3d71c63.js" as="script"><link rel="prefetch" href="../assets/js/1.0e9343dc.js"><link rel="prefetch" href="../assets/js/10.2baec169.js"><link rel="prefetch" href="../assets/js/11.d80f7c77.js"><link rel="prefetch" href="../assets/js/12.aa2e371c.js"><link rel="prefetch" href="../assets/js/13.5014d0f6.js"><link rel="prefetch" href="../assets/js/14.ff660a25.js"><link rel="prefetch" href="../assets/js/15.53b8eaba.js"><link rel="prefetch" href="../assets/js/16.671b4094.js"><link rel="prefetch" href="../assets/js/17.f05d735b.js"><link rel="prefetch" href="../assets/js/18.7b9d17cf.js"><link rel="prefetch" href="../assets/js/19.e990d16b.js"><link rel="prefetch" href="../assets/js/20.e46d8936.js"><link rel="prefetch" href="../assets/js/22.5417b896.js"><link rel="prefetch" href="../assets/js/23.31639332.js"><link rel="prefetch" href="../assets/js/24.308ebd18.js"><link rel="prefetch" href="../assets/js/25.77ed8211.js"><link rel="prefetch" href="../assets/js/26.24e32642.js"><link rel="prefetch" href="../assets/js/27.7efbafee.js"><link rel="prefetch" href="../assets/js/28.545976b9.js"><link rel="prefetch" href="../assets/js/29.db559e09.js"><link rel="prefetch" href="../assets/js/3.825e15bf.js"><link rel="prefetch" href="../assets/js/30.4329e80d.js"><link rel="prefetch" href="../assets/js/31.29ef7618.js"><link rel="prefetch" href="../assets/js/32.6b1fafd6.js"><link rel="prefetch" href="../assets/js/33.3db353e4.js"><link rel="prefetch" href="../assets/js/34.153adb9a.js"><link rel="prefetch" href="../assets/js/35.9dff06db.js"><link rel="prefetch" href="../assets/js/36.2e354c3f.js"><link rel="prefetch" href="../assets/js/37.b1e087db.js"><link rel="prefetch" href="../assets/js/38.35086b89.js"><link rel="prefetch" href="../assets/js/39.3edabad1.js"><link rel="prefetch" href="../assets/js/4.8116fb49.js"><link rel="prefetch" href="../assets/js/40.8c5fb15e.js"><link rel="prefetch" href="../assets/js/41.f1ef48d4.js"><link rel="prefetch" href="../assets/js/42.a448ab01.js"><link rel="prefetch" href="../assets/js/43.041a1664.js"><link rel="prefetch" href="../assets/js/44.46d6167a.js"><link rel="prefetch" href="../assets/js/45.c635a1aa.js"><link rel="prefetch" href="../assets/js/46.903c580f.js"><link rel="prefetch" href="../assets/js/47.eaf8c7bc.js"><link rel="prefetch" href="../assets/js/48.47f6cb68.js"><link rel="prefetch" href="../assets/js/49.25fe67d2.js"><link rel="prefetch" href="../assets/js/5.caaf89c9.js"><link rel="prefetch" href="../assets/js/50.6b112bbb.js"><link rel="prefetch" href="../assets/js/51.69b9a79c.js"><link rel="prefetch" href="../assets/js/52.f8dd3c58.js"><link rel="prefetch" href="../assets/js/53.23d0a9dd.js"><link rel="prefetch" href="../assets/js/54.c6fd617d.js"><link rel="prefetch" href="../assets/js/55.cd31e697.js"><link rel="prefetch" href="../assets/js/56.aee4ac1a.js"><link rel="prefetch" href="../assets/js/57.b03d498b.js"><link rel="prefetch" href="../assets/js/58.9b4b5e42.js"><link rel="prefetch" href="../assets/js/59.a805af4a.js"><link rel="prefetch" href="../assets/js/61.0535ff5a.js"><link rel="prefetch" href="../assets/js/62.6656910c.js"><link rel="prefetch" href="../assets/js/63.4ea8df3a.js"><link rel="prefetch" href="../assets/js/64.3f64c12e.js"><link rel="prefetch" href="../assets/js/65.1bf8d53c.js"><link rel="prefetch" href="../assets/js/66.5ea354b5.js"><link rel="prefetch" href="../assets/js/67.6852a990.js"><link rel="prefetch" href="../assets/js/68.f96628e7.js"><link rel="prefetch" href="../assets/js/69.e1813d76.js"><link rel="prefetch" href="../assets/js/7.9b43d91c.js"><link rel="prefetch" href="../assets/js/70.144e1543.js"><link rel="prefetch" href="../assets/js/71.69797111.js"><link rel="prefetch" href="../assets/js/8.41dfb4f3.js"><link rel="prefetch" href="../assets/js/9.459a294e.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.417e60f4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="layout-page" data-v-77c1f010><div class="home-page-head" data-v-24773ba0 data-v-77c1f010><section class="el-container header-box w" data-v-24773ba0><div class="mobile mobile-nav" data-v-24773ba0></div> <div class="logo hidden-719 router-link-active" data-v-24773ba0>
+       lucky-canvas 抽奖插件
+    </div> <div class="nav-bar hidden-719" data-v-24773ba0><nav class="nav-links" data-v-24773ba0><div class="nav-item"><a href="../index.html" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="使用" class="dropdown-title"><span class="title">使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="使用" class="mobile-dropdown-title"><span class="title">使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="../usage/js.html" class="nav-link">
+  在 JS / TS 中使用
+</a></li><li class="dropdown-item"><!----> <a href="../usage/vue.html" class="nav-link">
+  在 Vue 中使用
+</a></li><li class="dropdown-item"><!----> <a href="../usage/react.html" class="nav-link">
+  在 React 中使用
+</a></li><li class="dropdown-item"><!----> <a href="../usage/wx.html" class="nav-link">
+  在 微信小程序 中使用
+</a></li><li class="dropdown-item"><!----> <a href="../usage/uni-app.html" class="nav-link">
+  在 UniApp 中使用
+</a></li><li class="dropdown-item"><!----> <a href="../usage/taro.html" class="nav-link">
+  在 Taro 中使用
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档" class="dropdown-title"><span class="title">文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档" class="mobile-dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="../docs/wheel.html" class="nav-link">
+  大转盘 LuckyWheel
+</a></li><li class="dropdown-item"><!----> <a href="../docs/grid.html" class="nav-link">
+  九宫格 LuckyGrid
+</a></li><li class="dropdown-item"><!----> <a href="../docs/slot.html" class="nav-link">
+  老虎机 SlotMachine
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="示例" class="dropdown-title"><span class="title">示例</span> <span class="arrow down"></span></button> <button type="button" aria-label="示例" class="mobile-dropdown-title"><span class="title">示例</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="../demo/wheel.html" class="nav-link">
+  基础示例
+</a></li><li class="dropdown-item"><!----> <a href="../demo/more.html" class="nav-link">
+  完整示例
+</a></li></ul></div></div><div class="nav-item"><a href="responsive.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  常见问题
+</a></div><div class="nav-item"><a href="https://100px.net/playground.html" class="nav-link">
+  Playground
+</a></div> <div class="nav-item"><a href="https://github.com/buuing/lucky-canvas" target="_black"><img src="https://img.shields.io/github/stars/buuing/lucky-canvas?style=social" height="22" align="top" class="animate-swing" style="margin-top: 5px"></a></div> 
+   
+   <!----></nav> 
+    </div></section></div> <section class="el-container page-content w" data-v-77c1f010><aside class="el-aside page-aside hidden-719" style="width:300px;" data-v-77c1f010><div class="page-sidebar" data-v-32994cca data-v-77c1f010><div data-v-32994cca><div class="sidebar-title" data-v-32994cca>常见问题 (正在整理中~)</div><ul class="sidebar-list" data-v-32994cca><li data-v-32994cca>关于这个抽奖插件</li><li class="router-link-exact-active router-link-active" data-v-32994cca>如何配置响应式</li><li data-v-32994cca>如何配置偏移角度</li></ul></div></div></aside> <main class="el-main" style="padding:20px 40px 50px 40px;" data-v-77c1f010><div class="content__default" data-v-77c1f010><h1 id="如何配置响应式"><a href="#%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E5%93%8D%E5%BA%94%E5%BC%8F" class="header-anchor">#</a> 如何配置响应式</h1> <p>为了满足不同环境下对响应式的需求, 我特意针对以下几个常用单位做了适配</p> <table><thead><tr><th style="text-align:center;">环境</th> <th style="text-align:center;">支持的响应式单位</th></tr></thead> <tbody><tr><td style="text-align:center;">浏览器端</td> <td style="text-align:center;"><code>rem</code> / <code>vw</code></td></tr> <tr><td style="text-align:center;">小程序端</td> <td style="text-align:center;"><code>rpx</code></td></tr></tbody></table> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>你不要把 rem 或 vw 或 rpx 单位加在你自己的 style 样式或 css 文件中, <strong>而是要在组件中传递给我, 因为 canvas 的宽高不能通过 css 设置, 需要我在内部去设置</strong></p></div> <p>下面以大转盘抽奖为例, 其余抽奖类型配置方式一致</p> <RecoDemo collapse="true"><template><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">const</span> myLucky <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LuckyCanvas<span class="token punctuation">.</span>LuckyWheel</span><span class="token punctuation">(</span><span class="token string">'#my-lucky'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    width<span class="token operator">:</span> <span class="token string">'10rem'</span><span class="token punctuation">,</span>
+    height<span class="token operator">:</span> <span class="token string">'10rem'</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>你的配置项
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre></div></template> <template><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LuckyWheel</span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>10rem<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>10rem<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">...你的配置项</span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></code></pre></div></template> <template><div class="language-js extra-class"><pre class="language-js"><code><span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>LuckyWheel
+    width<span class="token operator">=</span><span class="token string">&quot;10rem&quot;</span>
+    height<span class="token operator">=</span><span class="token string">&quot;10rem&quot;</span>
+    <span class="token operator">...</span>你的配置项
+  <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">}</span></code></pre></div></template></RecoDemo> <div class="custom-block warning"><p class="custom-block-title">为什么不支持百分号单位?</p> <p>主要是考虑到小程序端无法获取父级元素的宽度, 为了保持多端一致性做出的妥协, 同时也相信上面这几个响应式单位完全可以满足你的需求</p></div> <br> <p>除了设置抽奖组件的宽高之外, 我内部的其他属性也同样支持上面的响应式单位, 比如:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  width<span class="token operator">:</span> <span class="token string">'1vw'</span><span class="token punctuation">,</span> <span class="token comment">// 宽度</span>
+  top<span class="token operator">:</span> <span class="token string">'30%'</span><span class="token punctuation">,</span> <span class="token comment">// 距离顶部的高度</span>
+  fontSize<span class="token operator">:</span> <span class="token string">'2rem'</span><span class="token punctuation">,</span> <span class="token comment">// 字体大小</span>
+  gutter<span class="token operator">:</span> <span class="token string">'0.5rem'</span><span class="token punctuation">,</span> <span class="token comment">// 格子缝隙</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我只是简单举了几个例子, 更多的属性可以查阅文档</p> <blockquote><p>理论上来说, 只要是可以配置 'px' 单位的属性, 就可以设置响应式单位<br>
+padding 属性除外, 这个属性我忘了处理了</p></blockquote></div></main></section> <div class="home-page-foot" data-v-48fabf0e data-v-77c1f010><p data-v-48fabf0e><span data-v-48fabf0e>
+      本插件完全免费，开源不易，
+      <a href="https://github.com/buuing/lucky-canvas" target="_black" data-v-48fabf0e><b style="color: #fff100" data-v-48fabf0e>
+          如果您觉得好用可以在 Github 点个 <span class="animate-rubberBand" data-v-48fabf0e>Star</span> 支持一下
+        </b></a></span></p> <p data-v-48fabf0e><span data-v-48fabf0e>
+      2019 ~ 2022
+      <a href="https://github.com/buuing/lucky-canvas/blob/master/LICENSE" target="_black" data-v-48fabf0e>
+        Apache-2.0 License
+      </a></span></p></div></div><div class="global-ui"></div></div>
+    <script src="../assets/js/app.72908285.js" defer></script><script src="../assets/js/21.4c81c67a.js" defer></script><script src="../assets/js/2.02db6476.js" defer></script><script src="../assets/js/60.d3d71c63.js" defer></script>
+  </body>
+</html>
